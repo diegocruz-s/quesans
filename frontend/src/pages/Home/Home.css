@@ -1,0 +1,21 @@
+.home{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.home h1{
+    color: #fff;
+}
+.allQuestions{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+    .home{
+        width: 100%;
+    }
+    .allQuestions{
+        flex-direction: column;
+    }
+}

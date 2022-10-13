@@ -1,0 +1,10 @@
+.message .error{
+    color: #f00;
+    margin: 1em;
+    text-align: center;
+}
+.message .success{
+    color: #0f0;
+    margin: 1em;
+    text-align: center;
+}

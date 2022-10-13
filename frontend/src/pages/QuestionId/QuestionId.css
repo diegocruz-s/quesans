@@ -1,0 +1,59 @@
+.questionId{
+    width: 50%;
+    margin: auto;
+}
+.datasQuestion{
+    padding: 1em;
+    width: 100%;
+    margin: 2em;
+    border-left: 4px solid #fff;
+    border-radius: .2em;
+}
+.optionsQuestion .titleQuestion{
+    color: #fff;
+    font-size: 1.3em;
+}
+.optionsQuestion .descQuestion{
+    color: #fff;
+    font-size: 1em;
+}
+.datasQuestion{
+    margin-left: 1em;
+}
+.answerQuestion{
+    color: #fff;
+    margin-top: 4em;
+}
+.answerQuestion .answer{
+    margin-bottom: 1.2em;
+    width: 100%;
+    margin: .2em auto;
+}
+.answerQuestion .answer .barComment{
+    margin-right: .5em;
+    margin-left: .5em;
+}
+.answerQuestion .answer .nameAnswer{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.submitFormCreate{
+    font-size: .7em;
+}
+.noanswer{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 700px) {
+    .questionId{
+        width: 100%;
+    }
+    .optionsQuestion{
+        margin-left: 1em;
+        width: 95%;
+    }
+    .answerQuestion .answer{
+        width: 100%;
+    }
+}

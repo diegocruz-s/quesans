@@ -1,0 +1,42 @@
+.myquestions{
+    width: 40%;
+    margin: auto;
+    margin-top: 2em;
+    text-align: center;
+}
+.myquestions .infoQuestions{
+    color: #fff;
+}
+.myquestions .myquestion{
+    margin-top: 2em;
+    border-bottom: 1px solid #fff;
+}
+.myquestions .infoQuestions .title{
+    font-size: 1.2em;
+    margin-bottom: .7em;
+}
+.myquestions .infoQuestions .description{
+    margin-bottom: 1em;
+}
+.myquestions .actionsQuestion{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-bottom: .5em;
+}
+.myquestion .actionsQuestion svg{
+    color: #fff;
+    font-size: 1.2em;
+    transition: .2s;
+}
+.myquestion .actionsQuestion svg:hover{
+    cursor: pointer;
+    color: rgb(153, 35, 250);
+}
+
+@media (max-width: 700px) {
+    .myquestions {
+        width: 100%;
+    }
+}
