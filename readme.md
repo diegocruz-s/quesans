@@ -65,9 +65,6 @@
 
 ## Front end
 ```bash
-    # clonar repositório
-    git clone https://github.com/diegocruz-s/quesans
-
     # entrar na pasta frontend
     cd frontend
 
