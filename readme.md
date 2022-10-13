@@ -71,7 +71,7 @@
     # instalar dependências
     npm install
 
-    # exucutar o projeto
+    # executar o projeto
     npm start
 ```
 
