@@ -1,14 +1,20 @@
 # Quesans
 
 # Imagens do projeto
-<img height='500em' src='./assets/ex1.png' />
-<img height='500em' src='./assets/ex2.png' />
-<img height='500em' src='./assets/ex3.png' />
+<div float="left">
+    <img height='500em' src='./assets/ex1.png' />
+    <img height='500em' src='./assets/ex2.png' />
+    <img height='500em' src='./assets/ex3.png' />
+</div>
+
 <br />
 <p>Após o login/cadastro</p>
-<img height='500em' src='./assets/ex4.png' />
-<img height='500em' src='./assets/ex5.png' />
-<img height='500em' src='./assets/ex6.png' />
+<div float="left">
+    <img height='500em' src='./assets/ex4.png' />
+    <img height='500em' src='./assets/ex5.png' />
+    <img height='500em' src='./assets/ex6.png' />
+</div>
+
 <p>OBS: projeto não foi desenvolvido pensando no mobile, apenas reduzir as imagens no navegador para printar com maior facilidade</p>
 
 ## Sobre o projeto
