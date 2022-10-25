@@ -90,6 +90,12 @@ export const AuthContextProvider = ({ children })=>{
         setUser(null);
     }
 
+    const resetStates = () => {
+        setError(null);
+        setLoading(false);
+        setSuccess(false);
+    }   
+
     return(
         <AuthContext.Provider value={{ 
             userCheck: user, 
@@ -98,7 +104,8 @@ export const AuthContextProvider = ({ children })=>{
             success,  
             login, 
             register, 
-            logout 
+            logout,
+            resetStates
         }}>
             { children }
         </AuthContext.Provider>

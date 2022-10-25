@@ -4,15 +4,21 @@ import { BsEnvelopeFill, BsEyeFill, BsLockFill, BsEyeSlashFill } from 'react-ico
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import Message from '../../components/Message/Message';
+import { useEffect } from "react";
 
 const Login = ()=>{
 
     const [changePass, setChangePass] = useState(false);
-    const { login, loadingContext, error } = useContext(AuthContext);
+    const { login, loadingContext, error, resetStates } = useContext(AuthContext);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    useEffect(()=>{
+        resetStates();
+    }, [])
+
     const handleSubmit = (e) => {
+        resetStates();
         e.preventDefault();
 
         const userLogged = {
@@ -20,6 +26,7 @@ const Login = ()=>{
         }
 
         login(userLogged);
+
     }
 
     const handleChangePass = () => {

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { BsEnvelopeFill, BsLockFill, BsPersonFill, BsCheckCircle, BsCheckCircleFill, BsEyeFill, BsEyeSlashFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import Message from '../../components/Message/Message';
@@ -6,13 +6,18 @@ import { AuthContext } from '../../context/authContext';
 
 const Register = ()=>{
     const [changePass, setChangePass] = useState(false);
-    const { register, loadingContext, error } = useContext(AuthContext);
+    const { register, loadingContext, error, resetStates } = useContext(AuthContext);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
+    useEffect(()=>{
+        resetStates();
+    }, [])
+
     const handleSubmit = (e) => {
+        resetStates();
         e.preventDefault();
 
         const newUser = {
@@ -105,7 +110,11 @@ const Register = ()=>{
 
                     <div className="divSubmitForm">
                         <Link to='/login'>Entrar</Link>
-                        <input type="submit" value="Cadastrar" className="submitForm" />
+                        {loadingContext ? (
+                            <input type="submit" value="Aguarde..." className="submitForm" disabled />
+                        ) : (
+                            <input type="submit" value="Cadastrar" className="submitForm" />
+                        )}
                     </div>
                 </form>
                 {error && <Message msg={error} type='error' />}
