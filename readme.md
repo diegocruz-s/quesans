@@ -45,7 +45,6 @@
     git clone https://github.com/diegocruz-s/quesans
 
     # criar um arquivo .env na raiz do diretório backend
-    Necessário pois não subi a aplicação, foi um projeto feito apenas para treinar os meus estudos
         # Arquvio .env
         PORT=5000
         SECRET_TOKEN='string que você escolher'
